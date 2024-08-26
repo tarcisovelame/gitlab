@@ -1,0 +1,20 @@
+name: SFTP-Deploy
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+          username: 'velameweb'
+          server: 'ip_servidor'
+﻿          port: 2222
+          ssh_private_key: 'Vel*0147'
+          sftp_only: true
+          local_pash: 'caminho_repositorio'
+          remote_path: '/gitlab'
+          sftpArgs: '-o ConnectTimeout=20'
