@@ -11,9 +11,9 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: 'velameweb'
-          server: '191.6.215.153'
+          server: 'ftp.velameweb.com.br'
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           sftp_only: true
-          local_pash: 'caminho_repositorio'
+          local_path: '/'
           remote_path: '/gitlab'
           sftpArgs: '-o ConnectTimeout=20'
