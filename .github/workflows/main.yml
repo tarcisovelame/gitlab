@@ -11,7 +11,7 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           username: 'velameweb'
-          server: 'ftp.velameweb.com.br'
+          server: 'velameweb.com.br'
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           sftp_only: true
           local_path: './*'
