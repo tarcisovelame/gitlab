@@ -14,6 +14,6 @@ jobs:
           server: 'ftp.velameweb.com.br'
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           sftp_only: true
-          local_path: '/'
-          remote_path: '/gitlab'
+          local_path: './*'
+          remote_path: '/www/gitlab'
           sftpArgs: '-o ConnectTimeout=20'
