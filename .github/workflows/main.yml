@@ -13,7 +13,7 @@ jobs:
           username: 'velameweb'
           server: 'ip_servidor'
 ﻿          port: 2222
-          ssh_private_key: 'Vel*0147'
+          ssh_private_key: ${{ secrets.SFTP }}
           sftp_only: true
           local_pash: 'caminho_repositorio'
           remote_path: '/gitlab'
